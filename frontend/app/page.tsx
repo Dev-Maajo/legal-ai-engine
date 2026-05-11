@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   Scale, FileText, MessageSquare, Search, Shield,
-  Zap, ArrowRight, CheckCircle, Star, ChevronRight,
+  Zap, ArrowRight, CheckCircle, Star,
   BookOpen, Gavel, Building2,
 } from "lucide-react";
 import { useRef } from "react";

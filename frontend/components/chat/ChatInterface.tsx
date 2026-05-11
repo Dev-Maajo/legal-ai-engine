@@ -9,7 +9,6 @@ import { toast } from "sonner";
 import { listDocuments, streamChatMessage } from "@/lib/api";
 import { cn } from "@/lib/utils";
 import type { ChatMessage, Citation, Document } from "@/types";
-import { CitationCard } from "./CitationCard";
 import { MessageBubble } from "./MessageBubble";
 
 const STARTERS = [

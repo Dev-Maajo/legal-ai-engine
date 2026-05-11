@@ -9,10 +9,6 @@ interface SearchResultsProps {
   query: string;
 }
 
-function highlight(text: string, query: string): string {
-  return text;
-}
-
 export function SearchResults({ results, query }: SearchResultsProps) {
   if (!results.length) {
     return (

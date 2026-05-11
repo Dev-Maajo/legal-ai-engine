@@ -2,13 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Scale, Eye, EyeOff, Loader2, CheckCircle } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import { toast } from "sonner";
 
 export default function SignupPage() {
-  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");

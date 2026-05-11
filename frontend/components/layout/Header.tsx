@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
-import { Bell, User } from "lucide-react";
+import { Bell } from "lucide-react";
 
 interface HeaderProps {
   title: string;

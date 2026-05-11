@@ -19,7 +19,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       }
     });
 
-    const { data: listener } = supabase.auth.onAuthStateChange((event, session) => {
+    const { data: listener } = supabase.auth.onAuthStateChange((event) => {
       if (event === "SIGNED_OUT") router.replace("/login");
     });
     return () => listener.subscription.unsubscribe();
