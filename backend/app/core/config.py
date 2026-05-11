@@ -77,7 +77,7 @@ class Settings(BaseSettings):
     max_file_size_mb: int = Field(default=50, alias="MAX_FILE_SIZE_MB")
 
     # ── Embeddings ────────────────────────────────────────────────────────────
-    # BAAI/bge-large-en-v1.5 (335 M params, 1024-dim) is far superior to
+    # sentence-transformers/all-MiniLM-L6-v2 (335 M params, 1024-dim) is far superior to
     # all-MiniLM-L6-v2 for legal retrieval.  It ranks #1 on MTEB for
     # open-weight models and captures dense legal semantics much better.
     #

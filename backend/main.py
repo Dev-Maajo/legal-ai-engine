@@ -6,7 +6,7 @@ Stack
   Analysis LLM : NVIDIA NIM — mistralai/mistral-large-2-instruct (123 B)
   Chat LLM     : NVIDIA NIM — meta/llama-3.1-nemotron-70b-instruct (RLHF-tuned)
   Fast LLM     : NVIDIA NIM — meta/llama-3.1-8b-instruct (query expansion)
-  Embeddings   : BAAI/bge-large-en-v1.5 (local, free, 1024-dim)
+  Embeddings   : sentence-transformers/all-MiniLM-L6-v2 (local, free, 1024-dim)
   Vector DB    : ChromaDB + BM25 hybrid retrieval (local, free)
   PDF          : PyMuPDF (local, free)
   Persistence  : documents.json + backend/uploads/  (no Supabase required)

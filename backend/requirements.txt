@@ -16,7 +16,7 @@ langchain-openai>=0.2.0
 langchain-chroma==0.1.4
 
 # Embeddings — local, free (no API key required)
-# BAAI/bge-large-en-v1.5 is the default (much better than MiniLM for retrieval)
+# sentence-transformers/all-MiniLM-L6-v2 is the default (much better than MiniLM for retrieval)
 # Changing embedding_model requires clearing ChromaDB and re-uploading documents.
 sentence-transformers==3.3.1
 
