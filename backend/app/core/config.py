@@ -85,7 +85,7 @@ class Settings(BaseSettings):
     # clearing ChromaDB (delete backend/chroma_db/) and re-uploading all PDFs.
     # The system will warn on startup if the stored model name doesn't match.
     embedding_model: str = Field(
-        default="BAAI/bge-large-en-v1.5",
+        default="sentence-transformers/all-MiniLM-L6-v2",
         alias="EMBEDDING_MODEL",
     )
     embedding_batch_size: int = Field(default=32, alias="EMBEDDING_BATCH_SIZE")

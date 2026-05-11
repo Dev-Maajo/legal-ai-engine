@@ -25,7 +25,8 @@ Why hybrid?
 Other improvements
 ------------------
 - Diversity pruning: at most _MAX_CHUNKS_PER_PAGE (3) chunks per (doc, page).
-- Startup pre-warm loads embedding model and ChromaDB before the first request.
+- Embedding model is lazy-loaded on first use (not at startup) to keep Railway
+  container boot time and memory footprint low.
 - Embedding model consistency check warns if the model changed since last index.
 - All embedding work runs in a thread-pool executor so the async event loop is
   never blocked by CPU-bound sentence-transformer inference.
@@ -105,11 +106,10 @@ def _get_collection() -> chromadb.Collection:
 # ── Startup pre-warm ──────────────────────────────────────────────────────────────
 
 def prewarm() -> None:
-    """Load the embedding model and ChromaDB client at process start."""
+    """Initialise ChromaDB at process start. Embedding model loads lazily on first use."""
     _check_embedding_consistency()
-    _get_model()
     _get_collection()
-    logger.info("Vector store pre-warmed")
+    logger.info("Vector store ready (embedding model loads on first use)")
 
 
 # ── Embedding helpers ─────────────────────────────────────────────────────────────
