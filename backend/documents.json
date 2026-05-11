@@ -8,6 +8,100 @@
     "chunk_count": 11,
     "status": "ready",
     "created_at": "2026-05-11T10:43:56.706029+00:00",
-    "file_path": "D:\\Downloads\\legal-ai-engine\\backend\\uploads\\b64938c6-049e-4c2a-b49e-b621a826eb4c_LEGAL AGREEMENT (1).pdf"
+    "file_path": "D:\\Downloads\\legal-ai-engine\\backend\\uploads\\b64938c6-049e-4c2a-b49e-b621a826eb4c_LEGAL AGREEMENT (1).pdf",
+    "analysis": {
+      "_schema_version": "3.1",
+      "document_id": "b64938c6-049e-4c2a-b49e-b621a826eb4c",
+      "document_name": "LEGAL AGREEMENT (1).pdf",
+      "document_type": "Service Agreement",
+      "parties": [
+        "Provider",
+        "Client"
+      ],
+      "governing_law": "India",
+      "effective_date": null,
+      "summary": "This Service Agreement outlines the terms and conditions between the Provider and the Client. The Provider shall not be liable for indirect, incidental, or consequential damages exceeding the total amount paid under this Agreement. The Agreement may be terminated by either party with 30 days written notice or immediately in the event of material breach, fraud, or unauthorized disclosure of confidential information. Disputes arising under this Agreement shall be resolved through mediation and arbitration in Mumbai, India. The Client is responsible for paying the total amount due under this Agreement, while the Provider is responsible for providing services as agreed upon. The Agreement does not specify the term or renewal provisions. The Client bears the risk of material breach, fraud, or unauthorized disclosure of confidential information, which may result in immediate termination. The Provider bears the risk of disputes arising under this Agreement, which shall be resolved through mediation and arbitration.",
+      "key_points": [
+        "Provider's liability is limited to the total amount paid under this Agreement.",
+        "Either party may terminate this Agreement with 30 days written notice.",
+        "Immediate termination may occur in the event of material breach, fraud, or unauthorized disclosure of confidential information.",
+        "Disputes arising under this Agreement shall be resolved through mediation and arbitration in Mumbai, India.",
+        "The Client is responsible for paying the total amount due under this Agreement.",
+        "The Provider is responsible for providing services as agreed upon.",
+        "The Agreement does not specify the term or renewal provisions.",
+        "The Client bears the risk of material breach, fraud, or unauthorized disclosure of confidential information."
+      ],
+      "clauses": [
+        {
+          "type": "Liability Clause",
+          "description": "This clause limits the Provider's liability for indirect, incidental, or consequential damages to the total amount paid under this Agreement.",
+          "verbatim": "Provider shall not be liable for indirect, incidental, or consequential damages exceeding the total amount paid under this Agreement.",
+          "page": 1,
+          "risk_level": "low",
+          "confidence": 0.9
+        },
+        {
+          "type": "Termination Clause",
+          "description": "This clause outlines the conditions under which either party may terminate this Agreement, including 30 days written notice or immediate termination in the event of material breach, fraud, or unauthorized disclosure of confidential information.",
+          "verbatim": "Either party may terminate this Agreement with 30 days written notice. Immediate termination may occur in the event of material breach, fraud, or unauthorized disclosure of confidential information.",
+          "page": 1,
+          "risk_level": "medium",
+          "confidence": 0.9
+        },
+        {
+          "type": "Dispute Resolution Clause",
+          "description": "This clause outlines the process for resolving disputes arising under this Agreement, including mediation and arbitration in Mumbai, India.",
+          "verbatim": "Any disputes arising under this Agreement shall first be attempted to be resolved through mediation. If unresolved, disputes shall be settled by arbitration in Mumbai, India.",
+          "page": 1,
+          "risk_level": "low",
+          "confidence": 0.9
+        }
+      ],
+      "risks": [
+        {
+          "title": "Material Breach or Unauthorized Disclosure",
+          "severity": "high",
+          "description": "The Client bears the risk of material breach, fraud, or unauthorized disclosure of confidential information, which may result in immediate termination.",
+          "recommendation": "The Client should ensure that it complies with the terms of this Agreement and does not engage in any material breach, fraud, or unauthorized disclosure of confidential information.",
+          "affected_party": "Client",
+          "confidence": 0.9
+        },
+        {
+          "title": "Dispute Resolution",
+          "severity": "medium",
+          "description": "The Provider bears the risk of disputes arising under this Agreement, which shall be resolved through mediation and arbitration in Mumbai, India.",
+          "recommendation": "The Provider should ensure that it complies with the terms of this Agreement and engages in good faith negotiations to resolve any disputes that may arise.",
+          "affected_party": "Provider",
+          "confidence": 0.9
+        }
+      ],
+      "obligations": [
+        {
+          "party": "Client",
+          "obligation": "Pay the total amount due under this Agreement.",
+          "deadline": "Ongoing",
+          "consequence": "Non-payment may result in termination of this Agreement.",
+          "page": 1,
+          "confidence": 0.9
+        },
+        {
+          "party": "Provider",
+          "obligation": "Provide services as agreed upon.",
+          "deadline": "Ongoing",
+          "consequence": "Failure to provide services may result in termination of this Agreement.",
+          "page": 1,
+          "confidence": 0.9
+        }
+      ],
+      "key_dates": [
+        {
+          "label": "Termination Notice Period",
+          "date_value": "30 days",
+          "significance": "Either party may terminate this Agreement with 30 days written notice.",
+          "page": 1
+        }
+      ],
+      "penalties": []
+    }
   }
 }

@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     # ── NVIDIA NIM — three-tier model strategy ────────────────────────────────
     #
     # analysis_model  : heavy structured-JSON extraction (analysis, summary)
-    #                   → mistralai/mistral-large-2-instruct (123 B)
+    #                   → meta/llama-3.1-70b-instruct (123 B)
     #                   Mistral Large 2 consistently outperforms Llama-3.1-70B
     #                   on structured JSON output, legal-benchmark accuracy,
     #                   and instruction adherence — all on the same NVIDIA NIM
@@ -43,7 +43,7 @@ class Settings(BaseSettings):
         alias="NVIDIA_BASE_URL",
     )
     nvidia_analysis_model: str = Field(
-        default="mistralai/mistral-large-2-instruct",
+        default="meta/llama-3.1-70b-instruct",
         alias="NVIDIA_ANALYSIS_MODEL",
     )
     nvidia_chat_model: str = Field(
@@ -58,7 +58,7 @@ class Settings(BaseSettings):
     # Legacy alias kept so existing .env files that set NVIDIA_MODEL still work.
     # The analysis model takes precedence; this acts as a fallback.
     nvidia_model: str = Field(
-        default="mistralai/mistral-large-2-instruct",
+        default="meta/llama-3.1-70b-instruct",
         alias="NVIDIA_MODEL",
     )
 

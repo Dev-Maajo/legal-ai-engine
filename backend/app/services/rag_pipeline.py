@@ -3,7 +3,7 @@ RAG pipeline — three-tier model strategy.
 
 Model tiers (all on NVIDIA NIM, same API key)
 ----------------------------------------------
-analysis_llm  mistralai/mistral-large-2-instruct (123 B)
+analysis_llm  meta/llama-3.1-70b-instruct (123 B)
   • Used for: full document analysis, structured JSON extraction, summarization
   • Why Mistral Large 2:
     - 123 B parameters vs 70 B for Llama-3.1 — significantly more reasoning capacity

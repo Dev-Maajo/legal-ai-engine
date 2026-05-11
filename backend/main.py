@@ -3,7 +3,7 @@ Legal AI Engine — standalone development server.
 
 Stack
 -----
-  Analysis LLM : NVIDIA NIM — mistralai/mistral-large-2-instruct (123 B)
+  Analysis LLM : NVIDIA NIM — meta/llama-3.1-70b-instruct (123 B)
   Chat LLM     : NVIDIA NIM — meta/llama-3.1-nemotron-70b-instruct (RLHF-tuned)
   Fast LLM     : NVIDIA NIM — meta/llama-3.1-8b-instruct (query expansion)
   Embeddings   : sentence-transformers/all-MiniLM-L6-v2 (local, free, 1024-dim)
