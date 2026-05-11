@@ -11,7 +11,11 @@ class Settings(BaseSettings):
     app_env: str = Field(default="development", alias="APP_ENV")
     secret_key: str = Field(default="dev-secret-key", alias="SECRET_KEY")
     allowed_origins: list[str] = Field(
-        default=["http://localhost:3000", "http://127.0.0.1:3000"],
+        default=[
+            "https://legalai.hayatech.dev",
+            "http://localhost:3000",
+            "http://127.0.0.1:3000",
+        ],
         alias="ALLOWED_ORIGINS",
     )
 
