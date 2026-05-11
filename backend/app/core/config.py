@@ -29,7 +29,7 @@ class Settings(BaseSettings):
     #                   endpoint with the same API key.
     #
     # chat_model      : conversational RAG (streaming answers, Q&A)
-    #                   → meta/llama-3.1-nemotron-70b-instruct
+    #                   → meta/llama-3.1-8b-instruct
     #                   NVIDIA-fine-tuned Llama with reinforcement learning from
     #                   human feedback, ~8 pp better on MT-Bench and instruction
     #                   tasks versus the base Llama-3.1-70B.
@@ -47,7 +47,7 @@ class Settings(BaseSettings):
         alias="NVIDIA_ANALYSIS_MODEL",
     )
     nvidia_chat_model: str = Field(
-        default="meta/llama-3.1-nemotron-70b-instruct",
+        default="meta/llama-3.1-8b-instruct",
         alias="NVIDIA_CHAT_MODEL",
     )
     nvidia_fast_model: str = Field(

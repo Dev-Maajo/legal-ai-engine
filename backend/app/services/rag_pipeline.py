@@ -12,7 +12,7 @@ analysis_llm  meta/llama-3.1-70b-instruct (123 B)
     - Scores ~82 % on LSAT (Llama-3.1-70B: ~73 %), competitive on Bar Exam tasks
     - Available on NVIDIA NIM with the same API key — zero infrastructure change
 
-chat_llm      meta/llama-3.1-nemotron-70b-instruct (70 B, NVIDIA RLHF-tuned)
+chat_llm      meta/llama-3.1-8b-instruct (70 B, NVIDIA RLHF-tuned)
   • Used for: streaming conversational RAG, Q&A
   • Why Nemotron: NVIDIA fine-tuned with reinforcement learning from human feedback,
     ~8 pp better than base Llama-3.1-70B on MT-Bench and instruction-following tasks;
