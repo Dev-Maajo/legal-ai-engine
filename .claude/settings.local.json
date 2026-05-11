@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"d:\\\\Downloads\\\\legal-ai-engine\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(py -3.11 -c \"import app.services.pdf_processor as p; print\\('OK — _SENT_RE:', p._SENT_RE.pattern[:60], '...'\\)\")"
+    ]
+  }
+}

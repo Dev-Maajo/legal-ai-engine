@@ -1,0 +1,43 @@
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.17
+python-dotenv==1.0.1
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# PDF Processing (local, free)
+PyMuPDF==1.24.14
+
+# AI — NVIDIA NIM inference via OpenAI-compatible API
+openai>=1.0.0
+langchain==0.3.14
+langchain-community==0.3.14
+langchain-openai>=0.2.0
+langchain-chroma==0.1.4
+
+# Embeddings — local, free (no API key required)
+# BAAI/bge-large-en-v1.5 is the default (much better than MiniLM for retrieval)
+# Changing embedding_model requires clearing ChromaDB and re-uploading documents.
+sentence-transformers==3.3.1
+
+# Vector store — local, free
+chromadb==0.5.23
+
+# Hybrid retrieval: BM25 keyword search to complement semantic similarity
+rank-bm25==0.2.2
+
+# Database (only required when running the full app/main.py with Supabase)
+supabase==2.10.0
+asyncpg==0.30.0
+
+# Streaming / SSE
+sse-starlette==2.1.3
+
+# Utilities
+httpx==0.27.2
+aiofiles==24.1.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+loguru==0.7.3
+tenacity==9.0.0
+numpy>=1.26.0
